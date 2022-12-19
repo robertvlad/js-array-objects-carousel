@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    width: 50vw;
+    height: 50vh;
+    position:relative;
+}
+
+.item{
+    display: none;
+}
+
+.item-slider, .item, img{
+    height: 100%
+}
+
+.item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.item.active{
+    display: block;
+}

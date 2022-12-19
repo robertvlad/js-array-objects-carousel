@@ -19,6 +19,14 @@
 
 .item{
     display: none;
+    position: relative;
+}
+
+.item-description{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #ffffff;
 }
 
 .item-slider, .item, img{
@@ -30,6 +38,55 @@
     object-fit: cover;
 }
 
+.arrow{
+    position: absolute;
+    width: 40px;
+    background-color: rgba(174, 174, 174, 0.509);
+    border-radius: 50px;
+    font-weight: 800; 
+    left: 50%;
+    font-size: 30px;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.next{
+    top: 5px; 
+}
+
+.prev{
+    bottom: 5px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(174, 174, 174, 1);   
+}
+
 .item.active{
     display: block;
+}
+
+.circles-container{
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(174, 174, 174, 0.509);
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.circle.active, .circle:hover{
+    background-color: rgba(174, 174, 174, 1); 
+}
+
+.hidden{
+    display: none;
 }
